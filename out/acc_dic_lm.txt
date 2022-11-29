@@ -1,0 +1,29 @@
+
+Call:
+glm(formula = acc ~ n_c * j_c * t0_c, family = "binomial", data = dic)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4350  -1.2776   0.9812   1.0665   1.2059  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   3.210e-01  4.368e-02   7.349 1.99e-13 ***
+n_c          -3.102e-03  1.179e-03  -2.631  0.00852 ** 
+j_c          -1.772e-03  1.180e-03  -1.502  0.13303    
+t0_c         -9.390e-03  1.839e-02  -0.511  0.60957    
+n_c:j_c       1.714e-05  3.185e-05   0.538  0.59045    
+n_c:t0_c     -4.579e-04  4.965e-04  -0.922  0.35633    
+j_c:t0_c      1.028e-03  4.978e-04   2.065  0.03892 *  
+n_c:j_c:t0_c -3.036e-06  1.344e-05  -0.226  0.82128    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3684.7  on 2699  degrees of freedom
+Residual deviance: 3667.7  on 2692  degrees of freedom
+AIC: 3683.7
+
+Number of Fisher Scoring iterations: 4
+
